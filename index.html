@@ -1,0 +1,242 @@
+<!DOCTYPE>
+<html lang = "ja">
+<head>
+    <meta charset = "utf-8">
+    <meta name="description" content="">
+    <meta name="keyword" content="">
+
+    <!-- jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- scene -->
+    <script type="text/javascript" src="scene.js"></script>
+    <!-- 経過時間 -->
+    <script type="text/javascript" src="pastTime.js"></script>
+
+    <!-- 画面サイズ -->
+    <script type="text/javascript" src="windowSize.js"></script>
+    <!-- タグ削除 -->
+    <script type="text/javascript" src="deleteNode.js"></script>
+
+
+    <title>Atsuki MayaのHome Page</title>
+    <link rel="stylesheet" href="./MA.css">
+
+    <!-- canvas -->
+
+</head>
+<!-- canvas -->
+<body onload="disp();" style="overflow: hidden;">
+
+    <!-- -------------------------------------------------------------- -->
+    <!-- シーン切り替え -->
+    <script type="text/javascript" id="sceneMane">
+      // "/"シーンの定義
+      Scene.add("/").set({
+        onShow: function(){ console.log("/ 表示処理"); },
+        onHide: function(){ console.log("/ 非表示処理"); }
+    });
+
+      // "/scene0"シーンの定義
+      Scene.add("/scene0").set({
+        onEnter: function(){
+            $("#scene2 #particles").css({"z-index": 0});
+            $("#scene1").css({"z-index": 0});
+            $("#scene4").css({"z-index": 0});
+            $("#scene5").css({"z-index": 0});
+            // $("#scene3").css({"z-index": 0});
+            $("#scene0 #outer").css({"z-index": 10});
+            init();
+            console.log("/scene1以下に影響する処理"); },
+        });
+
+      // "/scene1"シーンの定義
+
+      // Scene.add("/scene1").set({
+      //   onEnter: function(){
+      //       $("#scene2 #particles").css({"z-index": 0});
+      //       // $("#scene3").css({"z-index": 0});
+      //       $("#scene0").css({"z-index": 0});
+      //       $("#scene1").css({"z-index": 10});
+      //       console.log("/scene1以下に影響する処理"); },
+      //   });
+
+Scene.add("/scene2").set({
+    onEnter: function(){
+        $("#scene0 #outer").css({"z-index": 0});
+        $("#scene1").css({"z-index": 0});
+        $("#scene3").css({"z-index": 0});
+        $("#scene4").css({"z-index": 0});
+        $("#scene5").css({"z-index": 0});
+        $("#scene2 #particles").css({"z-index": 10});
+        console.log("/scene2以下に影響する処理"); },
+    });
+
+      // Scene.add("/scene3").set({
+      //   onEnter: function(){
+      //       $("#scene1").css({"z-index": 0});
+      //       $("#scene2 #particles").css({"z-index": 0});
+      //       $("#scene3").css({"z-index": 10});
+      //       console.log("/scene2以下に影響する処理"); },
+      //   });
+
+Scene.add("/scene4").set({
+    onEnter: function(){
+        $("#scene0 #outer").css({"z-index": -100000});
+        $("#scene1").css({"z-index": -100000});
+        $("#scene2 #particles").css({"z-index": -100000});
+        $("#scene4").css({"z-index": 10});
+        $("#scene5").css({"z-index": -100000});
+        console.log("/scene2以下に影響する処理"); },
+    });
+
+Scene.add("/scene5").set({
+    onEnter: function(){
+        $("#scene0 #outer").css({"z-index": -100000});
+        $("#scene1").css({"z-index": -1000000});
+        $("#scene2 #particles").css({"z-index": -100000});
+        $("#scene4").css({"z-index": -10000000});
+        $("#scene5").css({"z-index": 10});
+        console.log("/scene2以下に影響する処理"); },
+    });
+      // "/"へ遷移frr
+      Scene.goto("/");
+      // setTimeout(function(){ Scene.goto("/scene5"); }, 1000);
+      // setTimeout(function(){ Scene.goto("/scene4"); }, 6000);
+      // setTimeout(function(){ Scene.goto("/scene0"); }, 9000);
+      // setTimeout(function(){ Scene.goto("/scene2"); }, 12000);
+      // setTimeout(function(){ Scene.goto("/scene4"); }, 15000);
+
+// 
+</script>
+
+<!-- -------------------------------------------------------------- -->
+<!-- menu bar-->
+<div class = "side-bar" style="position: absolute; top: 0; z-index: 100000;">
+      <a href="index.html"><img src="./img/flower5.png" alt="logo" ></a>
+    <div class = "contents">
+        <a href = "Profile.html" style ="opacity: 1.0;">
+            <div class="menu">Profile</div>
+        </a><br>
+        <a href = "Activity.html" style ="opacity: 1.0;">
+            <div class="menu">Activity</div>
+        </a><br>
+        <a href = "Work.html" style ="opacity: 1.0;">
+            <div class="menu">Work</div>
+        </a><br>
+        <a href = "PhotoCollection.html" style ="opacity: 1.0;">
+          <div class="menu">Photo Collection</div>
+      </a><br>
+  </div>
+</div>
+
+<!-- -------------------------------------------------------------- -->
+<!-- 各backgroundシーン -->
+
+<!-- ************************* -->
+<!-- scene4 colorful line-->
+
+<div id="scene4" style="position: absolute; top: 0; z-index: -1;">
+    <canvas id='world'></canvas>
+    <script type="text/javascript" src="./scene4/index.js"></script>
+</div>
+
+<!-- ************************* -->
+<!-- scene5 いなずま-->
+<!-- <div id="scene5" style = "position: absolute; top: 0; z-index: -1;">
+    <canvas id='c'></canvas>
+    <script type="text/javascript" src="http://jsdo.it/akm2/fhMC/js"></script>
+    <script type="text/javascript" src="./scene5/index.js"></script>
+</div>
+-->
+<!-- ************************* -->
+<!-- scene0 drag circle-->
+
+<div id="scene0" >
+    <div id="outer" style = "position: absolute; top: 0; z-index: -1;" >
+        <div id="canvasContainer">
+            <canvas id="mainCanvas" width="1260" height="680"></canvas>
+            <script>
+                var w = windowSize_x;
+                var h = windowSize_y;
+                $('#mainCanvas').attr('width', windowSize_x);
+                $('#mainCanvas').attr('height', windowSize_y);   
+            </script>
+            <div id="output"></div>
+        </div>
+        <script type="text/javascript" src="./scene0/dragCircle.js"></script>
+    </div>
+</div>
+
+
+<!-- ************************* -->
+<!-- scene2 多頂点カメラ移動-->
+
+<div id="scene2">
+    <script src="http://jsrun.it/assets/i/r/t/Z/irtZu"></script>
+    <script src="http://jsrun.it/assets/C/x/Z/D/CxZDA"></script>
+    <div id ="particles" style="position: absolute; top: 0; z-index: 1;">
+        <div style="position: absolute;top:10px;left:10px;"></div>
+    </div>
+    <script type="text/javascript" src="./scene2/index.js"></script>
+</div>
+
+
+
+
+<!-- ************************* -->
+
+<!-- scene1 -->
+<!-- <div id="scene1">
+     <script type="text/javascript" src="./scene1/index.js"></script>
+</div> 
+-->
+
+<!-- ************************* -->
+
+<!-- scene1 マウスについてくる-->
+<!-- <div id="scene1">
+    <canvas id="world" style="position: absolute; top: 0;" width="1000" height='1000'></canvas>
+    <script>
+        var w = windowSize_x;
+        var h = windowSize_y;
+        $('#world').attr('width', windowSize_x);
+        $('#world').attr('height', windowSize_y);   
+    </script>
+    <script type="text/javascript" src="./scene1/index.js"></script>
+</div>
+-->
+
+
+<!-- ************************* -->
+
+<!-- sceme3 文字が浮かびあがる
+   <div id="scene3">
+        <span class="notification">click somewhere!</span>
+        <canvas id="canvas" width="400" height="400" style="position: absolute; top: 0;"></canvas>
+        <script>
+            var w = windowSize_x;
+            var h = windowSize_y;
+            $('#canvas').attr('width', windowSize_x);
+            $('#canvas').attr('height', windowSize_y);  
+            console.log();
+        </script>
+        <div id="info"></div>
+        <div id="debug"></div>
+        <script type="text/javascript" src="./scene3/index.js"></script>
+    </div>
+-->
+
+<!-- -------------------------------------------------------------- -->
+<div class = "main">
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

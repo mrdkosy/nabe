@@ -1,0 +1,28 @@
+body {
+  padding:0px;
+  margin:0px;
+}
+
+div#canvas {
+  position:absolute;
+  top:0px;
+  left:0px;
+  background-color:black;
+  width:480px;
+  height:480px;
+  z-index:0;
+}
+
+div#fps {
+  z-index:100;
+  position:absolute;
+  color:white;
+}
+
+div.particle {
+  width:1px;
+  height:1px;
+  position:absolute;
+  border:none;
+  z-index:100;
+}

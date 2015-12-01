@@ -1,0 +1,183 @@
+<!DOCTYPE>
+<html lang = "ja">
+<head>
+	<meta charset = "utf-8">
+	<meta name="description" content="">
+	<meta name="keyword" content="">
+
+	<title>Atsuki MayaのHome Page</title>
+	<link rel="stylesheet" href="./MA.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="to-top.js"></script>
+
+
+</head>
+<body>
+	<!-- menu -->
+	<div class = "side-bar" id="side-bar">
+		<div id="sideMenu">
+			<a href="index.html"><img src="./img/flower5.png" alt="logo" ></a>
+			<div class = "contents" id="contents">
+				<a href = "Profile.html" style ="opacity: 1.0;">
+					<div class="menu" id="a">Profile</div>
+				</a><br>
+				<a href = "Activity.html" style ="opacity: 1.0;">
+					<div class="menu" id="a2">Activity</div>
+				</a><br>
+				<a href = "Work.html" style ="opacity: 1.0;">
+					<div class="menu" id="a3">Work</div>
+				</a><br>
+				<a href = "PhotoCollection.html" style ="opacity: 1.0;">
+					<div class="menu" id="a4">Photo Collection</div>
+				</a><br>
+			</div>
+		</div>
+
+
+		<!-- マウスパーティクル -->
+		<canvas id="mParticle" width="500" height="500" style="display: block; z-index: 100000; "></canvas>
+		<!-- コンテンツサイズ取得 -->
+		
+		<script>
+			var w = document.getElementById("contents").clientWidth;
+			var h = document.getElementById("contents").clientHeight;
+			$('#mParticle').attr('width', w);
+			$('#mParticle').attr('height', h*100);   
+		</script>
+
+		<!-- 取得終了 -->
+
+		<script type="text/javascript" src="mouseParticle.js"></script>
+		<!-- マウスパーティクル終了 -->
+
+	</div>
+
+	<div class = "main work">
+		<div class ="article">
+			<h2>Work</h2>
+			<h4>openFrameworksというフレームワークを用いて、C++でプログラミングをしてつくったインタラクティブアート作品です。</h4>
+			<div class="list">
+				<!-- 1 -->
+				<div class="vList">
+					<figure>
+						<video src="./work/particle.mov" controls></video>
+						<figcaption>
+							<h3>シンデレラ</h3>
+							<p>〜魔法のステッキを持ってみよう!〜<br>
+								kinectセンサーを使って、手の位置情報から実際にステッキを持っているかのような体験ができます。
+								<p>
+								</figcaption>
+							</figure>
+						</div>
+
+						<!-- 2 -->
+						<div class="vList">
+							<figure>
+								<video src="./work/窓拭き.mov" controls></video>
+								<figcaption>
+									<h3>窓拭き</h3>
+									<p>〜綺麗にお掃除できるかな?〜<br>
+										kinectを使って実際に窓を拭いているように遊べるゲームです。<p>
+									</figcaption>
+								</figure>
+							</div>
+							<!-- 3 -->
+							<div class="vList">
+								<figure>
+									<video src="./work/box.mov" controls></video>
+									<figcaption>
+										<h3>3dBox</h3>
+										<p>PCのキーボード操作でインタラクティブにboxの角度や個数、色、大きさを変えられます。<p>
+										</figcaption>
+									</figure>
+								</div>
+
+								<!-- 4 -->
+								<div class="vList">
+									<figure>
+										<video src="./work/circle.mov" controls></video>
+										<figcaption>
+											<h3>Circle</h3>
+											<p>マウスの位置で円の大きさが変わり、(1,0)ベクトルとマウスの角度で円の色が色相環通りに変化します。<p>
+											</figcaption>
+										</figure>
+									</div>
+
+									<!-- 5 -->
+									<div class="vList">
+										<figure>
+											<video src="./work/k2_4.mov" controls></video>
+											<figcaption>
+												<h3>影絵</h3>
+												<p>〜どんな形にしようかな?〜<br>
+													Leap Motionセンサーを使って、手で作った形の影絵を描画します<p>
+												</figcaption>
+											</figure>
+										</div>
+
+										<!-- 6 -->
+										<div class="vList">
+											<figure>
+												<video src="./work/k3_3.mov" controls></video>
+												<figcaption>
+													<h3>イライラ棒</h3>
+													<p>〜ゴールまでたどり着けるかな?〜<br>
+														人差指を動かして線に触れないようにゴールまでの時間を競うゲームです。<p>
+													</figcaption>
+												</figure>
+											</div>
+
+											<!-- 7 -->
+											<div class="vList">
+												<figure>
+													<video src="./work/kitty2.mov" controls></video>	
+													<figcaption>
+														<h3>Hello Kitty</h3>
+														<p>〜上手に動かせるかな?〜<br>
+															あの人気キャラクター「キティちゃん」をPC上に再現。マウス操作で自由に動かすことができます。
+															<p>
+															</figcaption>
+														</figure>
+													</div>
+
+													<!-- 8 -->
+													<div class="vList">
+														<figure>
+															<video src="./work/tree.mov" controls></video>
+															<figcaption>
+																<h3>Tree</h3>
+																<p>春夏秋冬と変わる木の様子を表現しています。<p>
+																</figcaption>
+															</figure>
+														</div>
+
+														<!-- 9 -->
+														<div class="vList">
+															<figure>
+																<video src="./work/TOWADA 2015.mp4" controls></video>
+																<figcaption>
+																	<h3>ProjectinMapping</h3>
+																	<p>青森県十和田市の「アートステーショントワダ」という建物にプロジェクションマッピングをしました。十和田市の子供達が描いた絵を登場させて子供達は大盛り上がりでした。<p>
+																	</figcaption>
+																</figure>
+															</div>
+														</div>
+													</div>
+													<div id="footer">
+														<p>twitter: <a href="https://twitter.com/mrdkosy">@mrdkosy</a></p>
+														<p>facebook: <a href="https://www.facebook.com/maya.atsuki">https://www.facebook.com/maya.atsuki</a></p>
+														<p>blog: <a href="https://www.tumblr.com/blog/mrdkosy">https://www.tumblr.com/blog/mrdkosy</a></p>
+														<p>mail: g1420501@ocha.is.ac.jp</p>
+													</div>
+													<div id="work_background">
+														<video src="./mov/background_mov.mov" autoplay loop>
+														</video>	
+													</div>
+												</div>
+												<!-- topへ戻るボタン -->
+												<div id="page-top" class="page-top">
+													<p><a id="move-page-top" class="move-page-top">to Page Top</a></p>
+												</div>
+
+											</body>
+											</html>

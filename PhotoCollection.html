@@ -1,91 +1,89 @@
-<!DOCTYPE>
-<html lang = "ja">
-<head>
-	<meta charset = "utf-8">
-	<meta name="description" content="">
-	<meta name="keyword" content="">
+	<!DOCTYPE>
+	<html lang = "ja">
+	<head>
+		<meta charset = "utf-8">
+		<meta name="description" content="">
+		<meta name="keyword" content="">
 
-	<title>Atsuki MayaのHome Page</title>
-	<link rel="stylesheet" href="./MA.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="to-top.js"></script>
+		<title>Atsuki MayaのHome Page</title>
+		<link rel="stylesheet" href="./css/MA.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="./js/to-top.js"></script>
 
-</head>
-<body >
-	<div class = "side-bar" id="side-bar">
-		<div id="sideMenu">
-			<a href="index.html"><img src="./img/mylogo.png" alt="logo" ></a>
-			<div class = "contents" id="contents">
-				<a href = "Profile.html" style ="opacity: 1.0;">
-					<div class="menu" id="a">Profile</div>
-				</a><br>
-				<a href = "Activity.html" style ="opacity: 1.0;">
-					<div class="menu" id="a2">Activity</div>
-				</a><br>
-				<a href = "Work.html" style ="opacity: 1.0;">
-					<div class="menu" id="a3">Work</div>
-				</a><br>
-				<a href = "PhotoCollection.html" style ="opacity: 1.0;">
-					<div class="menu" id="a4">Photo Collection</div>
-				</a><br>
+	</head>
+	<body >
+		<div class = "side-bar" id="side-bar">
+			<div id="sideMenu">
+				<a href="index.html"><img src="./img/mylogo.png" alt="logo" ></a>
+				<div class = "contents" id="contents">
+					<a href = "Profile.html" style ="opacity: 1.0;">
+						<div class="menu" id="a">Profile</div>
+					</a><br>
+					<a href = "Activity.html" style ="opacity: 1.0;">
+						<div class="menu" id="a2">Activity</div>
+					</a><br>
+					<a href = "Work.html" style ="opacity: 1.0;">
+						<div class="menu" id="a3">Work</div>
+					</a><br>
+					<a href = "PhotoCollection.html" style ="opacity: 1.0;">
+						<div class="menu" id="a4">Photo Collection</div>
+					</a><br>
+				</div>
 			</div>
-		</div>
 
 
-		<!-- マウスパーティクル -->
-		<canvas id="mParticle" width="500" height="500" style="display: block; z-index: 100000; "></canvas>
-		<!-- コンテンツサイズ取得 -->
-		
-		<script>
-			var w = document.getElementById("contents").clientWidth;
-			var h = document.getElementById("contents").clientHeight;
-			$('#mParticle').attr('width', w);
-			$('#mParticle').attr('height', h*100);   
-		</script>
+			<!-- マウスパーティクル -->
+			<canvas id="mParticle" width="500" height="500" style="display: block; z-index: 100000; "></canvas>
+			<!-- コンテンツサイズ取得 -->
 
-		<!-- 取得終了 -->
+			<script>
+				var w = document.getElementById("contents").clientWidth;
+				var h = document.getElementById("contents").clientHeight;
+				$('#mParticle').attr('width', w);
+				$('#mParticle').attr('height', h*100);   
+			</script>
 
-		<script type="text/javascript" src="mouseParticle.js"></script>
-		<!-- マウスパーティクル終了 -->
+			<!-- 取得終了 -->
 
-	</div>
-
-	<div class = "main photocollection">
-		<div id="back"><video src="./mov/pcBack2.mp4" autoplay></div>
-
-		<div class ="article">
-			<h4 style="margin-top: 50px;">ガンダムプロジェクションマッピング @お台場</h4>
-			<img src="./photoCollection/gandamu/IMG_1861_1024.jpg">
-			<img src="./photoCollection/gandamu/IMG_1863_1024.jpg">
-			<img src="./photoCollection/gandamu/IMG_1864_1024.jpg">
-			<h4>進撃の巨人プロジェクションマッピング @川崎</h4>
-			<img src="./photoCollection/shingeki/IMG_2182_1024.jpg">
-			<img src="./photoCollection/shingeki/01.jpg">
-			<img src="./photoCollection/shingeki/02.jpg">
-			<img src="./photoCollection/shingeki/03.jpg">
-			<img src="./photoCollection/shingeki/IMG_2745_1024.jpg">
-			<h4>フジテレビのライトアップ</h4>
-			<img src="./photoCollection/fuji/IMG_5550_1024.jpg">
-			<img src="./photoCollection/fuji/IMG_5553_1024.jpg">
-			<img src="./photoCollection/fuji/IMG_5556_1024.jpg">
-			<h4></h4>
+			<script type="text/javascript" src="./js/mouseParticle.js"></script>
+			<!-- マウスパーティクル終了 -->
 
 		</div>
-		<div id="footer">
-			<p>twitter: <a href="https://twitter.com/mrdkosy">@mrdkosy</a></p>
-			<p>facebook: <a href="https://www.facebook.com/maya.atsuki">https://www.facebook.com/maya.atsuki</a></p>
-			<p>blog: <a href="https://www.tumblr.com/blog/mrdkosy">https://www.tumblr.com/blog/mrdkosy</a></p>
-			<p>mail: g1420501@ocha.is.ac.jp</p>
+
+		<div class = "main photocollection">
+			<div id="back"><video src="./mov/photoCollection7.mp4" autoplay></div>
+
+			<div class ="article">
+				<!-- <h4 style="margin-top: 50px;">ガンダムプロジェクションマッピング @お台場</h4> -->
+				<img src="./img/photoCollection/gandamu/IMG_1861_1024.jpg">	
+				<img src="./img/photoCollection/gandamu/IMG_1863_1024.jpg">
+				<img src="./img/photoCollection/gandamu/IMG_1864_1024.jpg">
+				<br>
+				<!-- <h4>進撃の巨人プロジェクションマッピング @川崎</h4> -->
+				<img src="./img/photoCollection/shingeki/IMG_2182_1024.jpg">
+				<img src="./img/photoCollection/shingeki/01.jpg">
+				<img src="./img/photoCollection/shingeki/02.jpg">
+				<img src="./img/photoCollection/shingeki/03.jpg">
+				<!-- <h4>フジテレビのライトアップ</h4> -->
+				<img src="./img/photoCollection/fuji/IMG_5550_1024.jpg">
+				<img src="./img/photoCollection/fuji/IMG_5553_1024.jpg">
+				<img src="./img/photoCollection/fuji/IMG_5556_1024.jpg">
+			</div>
+			<div id="footer">
+				<p>twitter: <a href="https://twitter.com/mrdkosy">@mrdkosy</a></p>
+				<p>facebook: <a id="la" href="https://www.facebook.com/maya.atsuki">https://www.facebook.com/maya.atsuki</a></p>
+				<p>blog: <a id="la" href="https://www.tumblr.com/blog/mrdkosy">https://www.tumblr.com/blog/mrdkosy</a></p>
+				<p>mail: g1420501@ocha.is.ac.jp</p>
+			</div>
+
+		</div>
+		<div class="background">
+			<img src="./img/background.png">
+		</div>
+		<!-- topへ戻るボタン -->
+		<div id="page-top" class="page-top">
+			<p><a id="move-page-top" class="move-page-top">to Page Top</a></p>
 		</div>
 
-	</div>
-	<div class="background">
-		<img src="./img/background.png">
-	</div>
-	<!-- topへ戻るボタン -->
-	<div id="page-top" class="page-top">
-		<p><a id="move-page-top" class="move-page-top">to Page Top</a></p>
-	</div>
-
-</body>
-</html>
+	</body>
+	</html>

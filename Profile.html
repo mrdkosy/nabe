@@ -1,0 +1,101 @@
+<!DOCTYPE>
+<html lang = "ja">
+<head>
+	<meta charset = "utf-8">
+	<meta name="description" content="">
+	<meta name="keyword" content="">
+
+	<title>Atsuki MayaのHome Page</title>
+	<link rel="stylesheet" href="./MA.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="to-top.js"></script>
+	<script type="text/javascript" src="windowSize.js"></script>
+
+</head>
+<body >
+	<div class = "side-bar" id="side-bar">
+		<div id="sideMenu">
+			<a href="index.html"><img src="./img/mylogo.png" alt="logo" ></a>
+			<div class = "contents" id="contents">
+				<a href = "Profile.html" style ="opacity: 1.0;">
+					<div class="menu" id="a">Profile</div>
+				</a><br>
+				<a href = "Activity.html" style ="opacity: 1.0;">
+					<div class="menu" id="a2">Activity</div>
+				</a><br>
+				<a href = "Work.html" style ="opacity: 1.0;">
+					<div class="menu" id="a3">Work</div>
+				</a><br>
+				<a href = "PhotoCollection.html" style ="opacity: 1.0;">
+					<div class="menu" id="a4">Photo Collection</div>
+				</a><br>
+			</div>
+		</div>
+
+
+		<!-- マウスパーティクル -->
+		<canvas id="mParticle" width="500" height="500" style="display: block; z-index: 100000; "></canvas>
+		<!-- コンテンツサイズ取得 -->
+		<script>
+			var w = document.getElementById("contents").clientWidth;
+			var h = document.getElementById("contents").clientHeight;
+			$('#mParticle').attr('width', w);
+			$('#mParticle').attr('height', h*100);   
+		</script>
+
+		<!-- 取得終了 -->
+
+		<script type="text/javascript" src="mouseParticle.js"></script>
+		<!-- マウスパーティクル終了 -->
+
+	</div>
+	<div class = "main profile">
+		<div class ="article">
+			<h2>Profile</h2>
+			<img src="./img/thumb_IMG_7139_10242.jpg" width="30%">
+			<div id="pro">
+				<p style="display: inline-block; margin-right: 8px; font-size: 1.3em;">厚木麻耶</p>
+				<p style="display: inline-block; font-size: 0.8em;">Atsuki Maya</p><br>
+				<div id="table">
+					<div id="table_th">Student Number</div>
+					<div id="table_td">1420501</div>
+				</div>
+				<div id="table">
+					<div id="table_th">Birthday</div>
+					<div id="table_td">1996. 01. 25</div>
+				</div>
+				<div id="table">
+					<div id="table_th">Home Villege</div>
+					<div id="table_td">Tochigi</div>
+				</div>
+				<div id="table">
+					<div id="table_th">Twitter</div>
+					<div id="table_td"><a href="https://twitter.com/mrdkosy">@mrdkosy</a></div>
+				</div>
+				<div id="table">
+					<div id="table_th">Facebook</div>
+					<div id="table_td"><a href="https://www.facebook.com/maya.atsuki">https://www.facebook.com/maya.atsuki</a></div>
+				</div>
+				<div id="table">
+					<div id="table_th">Portfolio</div>
+					<div id="table_td"><a href="https://www.tumblr.com/blog/mrdkosy">https://www.tumblr.com/blog/mrdkosy</a></div>
+				</div>
+				<div id="table">
+					<div id="table_th">Mail</div>
+					<div id="table_td"><a href="mailto:g1420501&#64;ocha.is.ac.jp">g1420501&#64;ocha.is.ac.jp</a></div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<div class="background">
+		<img src="./img/background.png">
+	</div>
+	<!-- topへ戻るボタン -->
+	<div id="page-top" class="page-top">
+		<p><a id="move-page-top" class="move-page-top">to Page Top</a></p>
+	</div>
+
+</body>
+</html>

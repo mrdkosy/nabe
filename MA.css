@@ -1,10 +1,22 @@
 
+/*英語font*/
+@font-face { 
+	font-family: 'MyFont';
+	src: url(./font/Parisish.ttf);
+}
+/*日本語font*/
+@font-face {
+	font-family: 'MyFont2';
+	src: url(./font/uzura.ttf);
+}
+
 body{
 	margin: 0;
 	background: black;
-	font-family: sans-serif;
+	/*font-family: sans-serif;*/
+	font-family: MyFont, MyFont2;
 	font-weight: normal;
-	font-size: 16px;
+	font-size: 1.1em;
 	width: 100%;
 	height: 100%;
 	top: 0;
@@ -39,12 +51,12 @@ div{
 	/*z-index: 1000;*/
 }
 .side-bar img{
-	opacity: .85;
-	width:100%;
+	/*opacity: .85;*/
+	width:95%;
 	display: block;
-	/*margin-right: auto;*/
-	/*margin-left: -12px;*/
-	margin-top: -35px;
+	margin-right: auto;
+	margin-left: auto;
+	/*margin-top: -35px;*/
 }
 .contents{
 	width: 100%;

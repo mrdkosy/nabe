@@ -167,7 +167,7 @@ h4{
 	display: block;
 	margin: auto auto;
 	padding: auto;
-	opacity: 0.81;
+	opacity: 0.78;
 }
 
 figure {
@@ -263,12 +263,14 @@ figcaption p{
 	font-size: 1.1em;
 }
 .profile #table{
-	width: 120%;
+	width: 110%;
 	display: block;
 	border-bottom: 1.5px solid #ffffff;
 }
 .profile .article #table_th{
 	padding-left: 18px;
+	width: 145px;
+	/*background: red;*/
 }
 .profile .article #table_td{
 

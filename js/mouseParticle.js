@@ -203,6 +203,6 @@ function enterFrameHandler() {
     }
 
   }
-  while (n = n.next);  
+  while (n = null);  
 }
 

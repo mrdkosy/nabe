@@ -1,437 +1,437 @@
 
 /*英語font*/
 @font-face { 
-	font-family: 'MyFont';
-	src: url(../font/PoiretOne-Regular.ttf);
+    font-family: 'MyFont';
+    src: url(../font/PoiretOne-Regular.ttf);
 }
 /*日本語font*/
 @font-face {
-	font-family: 'MyFont2';
-	src: url(../font/mplus-1c-light.ttf);
+    font-family: 'MyFont2';
+    src: url(../font/mplus-1c-light.ttf);
 }
 
 body{
-	margin: 0;
-	background: black;
-	font-family: MyFont, MyFont2, sans-serif;
-	font-weight: bold;
-	letter-spacing: 0.12em;
-	font-size: 0.9em;
-	line-height: 1.5em;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	/*overflow: hidden;*/
-	position: absolute;
-	background: black;
-	color: white;
+    margin: 0;
+    background: black;
+    font-family: MyFont, MyFont2, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /*overflow: hidden;*/
+    position: absolute;
+    background: black;
+    color: white;
 
 
 }
 div{
-	display: inline-block;
+    display: inline-block;
 }
 
 #la{
-	letter-spacing: 0.01em;
+    letter-spacing: 0.01em;
 }
 h4{
-	font-size: 1.1em;
+    font-size: 1.1em;
 }
 /*----------------------------------*/
 /*side bar*/
 #sideMenu{
-	display: block;
-	width: 100%;
-	top: 0;
-	position: absolute;
-	z-index: 1500;
+    display: block;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    z-index: 1500;
 }
 .side-bar{
-	width: 16%;
-	height: 100%;
-	background: rgba(50, 50, 50, .85);
-	/*background: rgba(255, 255, 255, .2);*/
-	top: 0;
-	/*position: absolute;*/
-	position: fixed;
-	/*z-index: 1000;*/
+    width: 16%;
+    height: 100%;
+    background: rgba(50, 50, 50, .85);
+    /*background: rgba(255, 255, 255, .2);*/
+    top: 0;
+    /*position: absolute;*/
+    position: fixed;
+/*z-index: 1000;*/
 }
 .side-bar img{
-	/*opacity: .85;*/
-	width:95%;
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-	/*margin-top: -35px;*/
+    /*opacity: .85;*/
+    width:95%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+/*margin-top: -35px;*/
 }
 .contents{
-	width: 100%;
-	text-align: center;
-	margin-top: 40%;
+    width: 100%;
+    text-align: center;
+    margin-top: 40%;
 }
 .menu{
-	width:100%;
+    width:100%;
 }
 
 .menu:hover{
-	width: 100%;
-	background: rgb(100, 100, 100);
+    width: 100%;
+    background: rgb(100, 100, 100);
 }
 
 .contents a{
-	opacity: 1.0;
-	color: white;
-	text-decoration: none;
-	font-size: 20px;
-	line-height: 50px;
+    opacity: 1.0;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 50px;
 }
 
 /*----------------------------------*/
 /*main contents*/
 .main{
-	width: 84%;
-	/*height: 100%;*/
-	/*background: red;*/
-	float: right;
-	/*position: relative;*/
-	margin-right: 0;
-	padding-top: 100px;
+    width: 84%;
+    /*height: 100%;*/
+    /*background: red;*/
+    float: right;
+    /*position: relative;*/
+    margin-right: 0;
+    padding-top: 100px;
 }
 .main h2{
-	font-size: 2em;
+    font-size: 2em;
 }
 
 #footer{
-	background: rgba(0, 0, 0, .75);
-	/*background: red;*/
-	width: 97%;
-	/*height: 10%;*/
-	margin-left: 0;
-	padding: 15px;
-	color: white;
-	font-size: 15px;
-	line-height: 10px;
-	margin-top: 80px;
+    background: rgba(0, 0, 0, .75);
+    /*background: red;*/
+    width: 97%;
+    /*height: 10%;*/
+    margin-left: 0;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    line-height: 10px;
+    margin-top: 80px;
 }
 
 #footer a{
-	text-decoration: none;
-	color: white;
+    text-decoration: none;
+    color: white;
 }
 
 #footer a:hover{
-	color: rgb(255, 100, 170);
+    color: rgb(255, 100, 170);
 }
 
 .article{
-	/*background: red;*/
-	display: block;
-	width: 90%;
-	margin-right: auto;
-	margin-left: auto;
-	/*padding: 10%;*/
+    /*background: red;*/
+    display: block;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+/*padding: 10%;*/
 }
 
 /*----------------------------------*/
 /*work*/
 .work h4{
-	color: white;
-	font-size: 1.1em;
-	margin-top: 50px;
+    color: white;
+    font-size: 1.1em;
+    margin-top: 50px;
 }
 .list{
-	width: 100%;
-	padding-top: 2%;
+    width: 100%;
+    padding-top: 2%;
 }
 .vList{
-	width: 49.5%;
-	/*background: red;*/
-	margin: 50px 0 50px 0;
+    width: 49.5%;
+    /*background: red;*/
+    margin: 50px 0 50px 0;
 }
 .work video{
-	width: 83%;
-	display: block;
-	margin: auto auto;
+    width: 83%;
+    display: block;
+    margin: auto auto;
 
 }
 #work_background video{
-	width: 84%;
-	max-height: 100%;
-	/*height: 100%;*/
-	right: 0;
-	top: 6%;
-	z-index: -10;
-	position: fixed;
-	display: block;
-	margin: auto auto;
-	padding: auto;
-	opacity: 0.78;
+    width: 84%;
+    max-height: 100%;
+    /*height: 100%;*/
+    right: 0;
+    top: 6%;
+    z-index: -10;
+    position: fixed;
+    display: block;
+    margin: auto auto;
+    padding: auto;
+    opacity: 0.78;
 }
 
 figure {
-	position: relative;
-	overflow: hidden;
-	width: 100%;
-	margin-left: 0;	
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-left: 0;	
 }
 figcaption {
-	position: absolute;
-	top: -80%;
-	left: 	8.5%;
-	z-index: 2;
-	width: 76.65%; 
-	height: 75%;
-	background: rgba(0,0,0,.6);
-	-webkit-transition: .3s;
-	transition: .3s;
-	padding: 15px;
-	padding-top: 0;
+    position: absolute;
+    top: -80%;
+    left: 	8.5%;
+    z-index: 2;
+    width: 76.65%; 
+    height: 75%;
+    background: rgba(0,0,0,.6);
+    -webkit-transition: .3s;
+    transition: .3s;
+    padding: 15px;
+    padding-top: 0;
 }
 figure:hover figcaption {
-	top: 0;
+    top: 0;
 }
 
 figcaption h3, figcaption p{
-	color: rgba(255, 255, 255, .75);	
+    color: rgba(255, 255, 255, .75);	
 }
 
 figcaption p{
-	font-size: 0.95em;	
+    font-size: 0.95em;	
 }
 /*----------------------------------*/
 /*activity*/
 .activity{
-	color: white;
+    color: white;
 }
 .activity .lList{
-	width: 100%;
+    width: 100%;
 }
 .activity ul{
-	list-style-type: none;
+    list-style-type: none;
 }
 
 .activity li{
-	color: white;
-	line-height: 2.6em;
-	border-top: 1px solid #ffffff;
-	padding-left: 20px;
-	font-size: 1.1em;
+    color: white;
+    line-height: 2.6em;
+    border-top: 1px solid #ffffff;
+    padding-left: 20px;
+    font-size: 1.1em;
 
 }
 .activity li:hover{
-	background: rgba(100, 100, 100, .75);
+    background: rgba(100, 100, 100, .75);
 }
 .activity h2{
-	color: white;
+    color: white;
 }
 .activity a{
-	/*text-decoration: none;*/
-	color: white;
+    /*text-decoration: none;*/
+    color: white;
 }
 .activity h4{
-	font-size: 1.1em;
+    font-size: 1.1em;
 }
 .activity h3{
-	/*color: rgb(0, 161, 233);*/
-	margin-top: 100px;
-	font-size: 1.5em;
+    /*color: rgb(0, 161, 233);*/
+    margin-top: 100px;
+    font-size: 1.5em;
 }
 .activity img{
-	height: 150px;
+    height: 150px;
 }
 .activity strong{
-	color: rgb(255, 250, 175);
+    color: rgb(255, 250, 175);
 }
 
 /*----------------------------------*/
 /*profile*/
 .background img{
-	/*height: 100%;*/
-	width: 100%;
-	max-height: 100%;
-	display: block;
-	position: absolute;
-	top: 0;
-	z-index: -1000;
-	position: fixed;
+    /*height: 100%;*/
+    width: 100%;
+    max-height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: -1000;
+    position: fixed;
 }
 #pro{
-	/*width: 66%;*/
-	margin-left: 30px;
-	font-size: 1.1em;
+    /*width: 66%;*/
+    margin-left: 30px;
+    font-size: 1.1em;
 }
 .profile #table{
-	width: 110%;
-	display: block;
-	border-bottom: 1.5px solid #ffffff;
+    width: 108%;
+    display: block;
+    border-bottom: 1.5px solid #ffffff;
 }
 .profile .article #table_th{
-	padding-left: 18px;
-	width: 145px;
-	/*background: red;*/
+    padding-left: 18px;
+    width: 150px;
+/*background: red;*/
 }
 .profile .article #table_td{
 
 }
 .profile .article #table_th, .profile .article #table_td{
-	line-height: 2.3em;
+    line-height: 2.3em;
 }
 .profile #table a{
-	color: white;
-	text-decoration: none;
+    color: white;
+    text-decoration: none;
 
 }
 .profile #table a:hover{
-	text-decoration: underline;
+    text-decoration: underline;
 }
 .profile #pro_all{
-	width: 100%;
-	/*text-align: center;*/
-	padding-left: 5%;
+    width: 100%;
+    /*text-align: center;*/
+    padding-left: 5%;
 }
 /*----------------------------------*/
 /*photo collection*/
 
 .photocollection .article{
-	color: white;
+    color: white;
 }
 .photocollection .article #gallery .im{
-	width: 22.6%;
-	transition: 0.4s;
-	-webkit-transition: 0.4s ;
-	-moz-transition: 0.4s ;
+    width: 22.6%;
+    transition: 0.4s;
+    -webkit-transition: 0.4s ;
+    -moz-transition: 0.4s ;
 
 }
 .photocollection .article #gallery .im:hover{
-	opacity: .6;
+    opacity: .6;
 }
 
 .photocollection .article #gallery p{
-	color: black;
-	padding: 0;
-	margin: 0;
+    color: black;
+    padding: 0;
+    margin: 0;
 }
 
 #back{
-	margin-top: -100px;
-	height: 100%;
-	width: 100%;
+    margin-top: -100px;
+    height: 100%;
+    width: 100%;
 
 }
 #back video{
-	width: 100%;
-	display: block;
-	position: relative;
-	margin: auto;
+    width: 100%;
+    display: block;
+    position: relative;
+    margin: auto;
 }
 .photocollection .article #gallery h4{
-	color: white;
-	font-size: .9em;
-	margin-top: 50px;
+    color: white;
+    font-size: .9em;
+    margin-top: 50px;
 }
 /*----------------------------------*/
 /* モーダルを非表示 */
 
 .lightbox-modal input ~ div,
 .lightbox-modal input ~ label{
-	display:none;
+    display:none;
 }
 
 /* ラジオボタンを枠外に飛ばす */
 .lightbox input[type="radio"]{
-	position:absolute;
-	left:-999em;
+    position:absolute;
+    left:-999em;
 }
 
 /* サムネイル（label要素で囲んでおく）をクリックしたらモーダルが出現 */
 .lightbox-modal input:checked ~ div{
-	-moz-box-sizing:border-box;box-sizing:border-box;
-	position:absolute;
-	z-index:20;
-	display:block;
-	left:40%;
-	margin:-330px auto auto auto;
-	padding:10px 10px 10px 50px;
-	background:#fff;
+    -moz-box-sizing:border-box;box-sizing:border-box;
+    position:absolute;
+    z-index:20;
+    display:block;
+    left:40%;
+    margin:-330px auto auto auto;
+    padding:10px 10px 10px 50px;
+    background:#fff;
 
 }
 .lightbox-modal img{
-	width: 370px;
+    width: 370px;
 }
 /* div要素の中の「閉じる」ボタン */
 .lightbox-modal input ~ div label{
-	cursor:pointer;
+    cursor:pointer;
 }
 
 /* モーダルのバックグラウンド。label要素なのでクリックしたら元に戻る */
 .lightbox-modal input:checked ~ label{
-	position:absolute;
-	z-index:10;
-	display:block;
-	/*top:0;*/
-	right:0;
-	/*bottom:0;*/
-	left:0;
-	width: 100%;
-	/*height: 300%;*/
-	/*background: red;*/
-	/*background:hsla(0,0%,0%,0.80);*/
-	cursor:pointer;
+    position:absolute;
+    z-index:10;
+    display:block;
+    /*top:0;*/
+    right:0;
+    /*bottom:0;*/
+    left:0;
+    width: 100%;
+    /*height: 300%;*/
+    /*background: red;*/
+    /*background:hsla(0,0%,0%,0.80);*/
+    cursor:pointer;
 }
 
 /*----------------------------------*/
 /*ページtopへ戻るボタン*/
 .content
 {
-	min-height: 5000px ;
+    min-height: 5000px ;
 }
 
 
 .page-top
 {
-	display: none ;
-	margin: 0 ;
-	padding: 0 ;
+    display: none ;
+    margin: 0 ;
+    padding: 0 ;
 }
 
 .page-top p
 {
-	margin: 0 ;
-	padding: 0 ;
+    margin: 0 ;
+    padding: 0 ;
 
-	position: fixed ;
-	right: 16px ;
-	bottom: 30px ;
-	z-index: 100;
+    position: fixed ;
+    right: 16px ;
+    bottom: 30px ;
+    z-index: 100;
 }
 
 .move-page-top
 {
-	display: block ;
-	background: rgba(50, 50, 50, .75);
-	width: 150px ;
-	height: 50px ;
-	cursor: pointer ;
+    display: block ;
+    background: rgba(50, 50, 50, .75);
+    width: 150px ;
+    height: 50px ;
+    cursor: pointer ;
 
-	color: white;
-	line-height: 50px ;
-	text-decoration: none ;
-	text-align: center ;
-	font-weight: bold;
+    color: white;
+    line-height: 50px ;
+    text-decoration: none ;
+    text-align: center ;
+    font-weight: bold;
 
-	-webkit-transition:all 0.3s ;
-	-moz-transition:all 0.3s ;
-	transition:all 0.3s ;
+    -webkit-transition:all 0.3s ;
+    -moz-transition:all 0.3s ;
+    transition:all 0.3s ;
 }
 
 
 @media screen and ( min-width:1130px )
 {
-	.move-page-top:hover
-	{
-		opacity: 0.85 ;
-	}
+    .move-page-top:hover
+    {
+	opacity: 0.85 ;
+    }
 }
 

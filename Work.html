@@ -37,7 +37,7 @@
       <!-- マウスパーティクル -->
       <canvas id="mParticle" width="500" height="500" style="display: block; z-index: 100000; "></canvas>
       <!-- コンテンツサイズ取得 -->
-      
+
       <script>
 	var w = document.getElementById("contents").clientWidth;
 	var h = document.getElementById("contents").clientHeight;
@@ -53,9 +53,14 @@
     </div>
 
     <div class = "main work">
-      <div class ="article">
+    	<div id="work_background">
+    		<video src="./mov/background_mov.mp4" autoplay loop>
+    		</video>	
+    	</div>
+    	<div class ="article">
 	<h2>Work</h2>
-	<h4>openFrameworksというフレームワークを用いて、C++でプログラミングをしてつくったインタラクティブアート作品です。</h4>
+	<h4>「openFrameworks」というフレームワークを用いて、<br>
+	C++でプログラミングをして制作したインタラクティブアート作品を紹介します。</h4>
 	<div class="list">
 	  <!-- 1 -->
 	  <div class="vList">
@@ -185,8 +190,6 @@
 	      </figcaption>
 	    </figure>
 	  </div>
-
-
 	</div>
       </div>
       <div id="footer">
@@ -194,10 +197,6 @@
 	<p>facebook: <a id="la" href="https://www.facebook.com/maya.atsuki">https://www.facebook.com/maya.atsuki</a></p>
 	<p>blog: <a id="la" href="https://www.tumblr.com/blog/mrdkosy">https://www.tumblr.com/blog/mrdkosy</a></p>
 	<p>mail: g1420501@ocha.is.ac.jp</p>
-      </div>
-      <div id="work_background">
-	<video src="./mov/background_mov.mp4" autoplay loop>
-	</video>	
       </div>
     </div>
     <!-- topへ戻るボタン -->

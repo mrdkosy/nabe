@@ -36,6 +36,9 @@ div{
 #la{
 	letter-spacing: 0.01em;
 }
+h4{
+	font-size: 1.1em;
+}
 /*----------------------------------*/
 /*side bar*/
 #sideMenu{
@@ -97,7 +100,7 @@ div{
 	padding-top: 100px;
 }
 .main h2{
-
+	font-size: 2em;
 }
 
 #footer{
@@ -135,9 +138,8 @@ div{
 /*work*/
 .work h4{
 	color: white;
-	font-weight: normal;
 	font-size: 1.1em;
-	margin: 15px 50px;
+	margin-top: 50px;
 }
 .list{
 	width: 100%;
@@ -165,7 +167,7 @@ div{
 	display: block;
 	margin: auto auto;
 	padding: auto;
-	/*opacity: 0.8;*/
+	opacity: 0.81;
 }
 
 figure {
@@ -234,11 +236,14 @@ figcaption p{
 .activity h3{
 	/*color: rgb(0, 161, 233);*/
 	margin-top: 100px;
+	font-size: 1.5em;
 }
 .activity img{
 	height: 150px;
 }
-
+.activity strong{
+	color: rgb(255, 250, 175);
+}
 
 /*----------------------------------*/
 /*profile*/
@@ -253,23 +258,20 @@ figcaption p{
 	position: fixed;
 }
 #pro{
-	width: 66%;
+	/*width: 66%;*/
 	margin-left: 30px;
 	font-size: 1.1em;
-	/*background: red;*/
 }
 .profile #table{
-	width: 85%;
+	width: 120%;
+	display: block;
 	border-bottom: 1.5px solid #ffffff;
 }
 .profile .article #table_th{
-	width: 30%;
-	padding-left: 10px;
-	/*height: 100px;*/
-	/*background: red;*/
+	padding-left: 18px;
 }
 .profile .article #table_td{
-	/*background: blue;*/
+
 }
 .profile .article #table_th, .profile .article #table_td{
 	line-height: 2.3em;
@@ -282,32 +284,39 @@ figcaption p{
 .profile #table a:hover{
 	text-decoration: underline;
 }
+.profile #pro_all{
+	width: 100%;
+	/*text-align: center;*/
+	padding-left: 5%;
+}
 /*----------------------------------*/
 /*photo collection*/
 
 .photocollection .article{
 	color: white;
 }
-.photocollection .article h4{
-	margin-top: 80px;
-}
-.photocollection .article img{
-	width: 23%;
-	/*margin-right: 50px;*/
-	/*margin-top: 30px;*/
+.photocollection .article #gallery .im{
+	width: 22.6%;
 	transition: 0.4s;
 	-webkit-transition: 0.4s ;
 	-moz-transition: 0.4s ;
 
 }
-.photocollection .article img:hover{
+.photocollection .article #gallery .im:hover{
 	opacity: .6;
 }
+
+.photocollection .article #gallery p{
+	color: black;
+	padding: 0;
+	margin: 0;
+}
+
 #back{
 	margin-top: -100px;
 	height: 100%;
 	width: 100%;
-	
+
 }
 #back video{
 	width: 100%;
@@ -315,99 +324,59 @@ figcaption p{
 	position: relative;
 	margin: auto;
 }
-/*----------------------------------*/
-/*アコーディオン*/
-label {
+.photocollection .article #gallery h4{
 	color: white;
-	/*width: 300%;*/
-	/*width: 10px;*/
-	/*height: 100%;	*/
-	/*background: green;*/
-	/*color: #fff;*/
-	/*padding: 10px;*/
-	/*display: block;*/
-/*    margin: 0;
-    border: 1px solid #fff;
-    */
+	font-size: .9em;
+	margin-top: 50px;
 }
-.lbox{
-	width: 100%;
-	height: 100%;
-	/*background: red;*/
-	/*height: 100%*/
-}
-
-input[type="checkbox"].on-off{
-	display: none;
-}
-
-.menu_ ul {
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	transition: all 0.5s;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-.menu_ li {
-	padding: 5px;
-
-}
-
-input[type="checkbox"].on-off + ul{
-	/*height: 0;*/
-	width: 0;
-	overflow: hidden;
-}
-
-input[type="checkbox"].on-off:checked + ul{
-	/*height: 200px;*/
-	width: 100px;
-}
-.menu_ {
-	background: rgba(100, 100, 100, .75);
-}
-.menu_ label img{
-	width: 25px;
-	height: 25px;
-	position: relative;
-	display: block;
-	margin-right: 5px;
-	padding-bottom: 30px;
-}
-
 /*----------------------------------*/
-/*topページのシーン設定*/
-#particles {
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	background: black;
-}
-#scene1, #scene2, #scene3 #outer{
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	background: black;
-}
-div#info,div#debug{
-	position:absolute;
-	top:20px;
-	left:5px;
-	color:#FFFFFF;
+/* モーダルを非表示 */
+
+.lightbox-modal input ~ div,
+.lightbox-modal input ~ label{
+	display:none;
 }
 
-span.notification {
+/* ラジオボタンを枠外に飛ばす */
+.lightbox input[type="radio"]{
 	position:absolute;
-	top:5px;
-	left:5px;
-	color:#FFFFFF;
+	left:-999em;
 }
-#scene3 canvas, #scene1, #scene0 #outer, #scene4, #scene5 canvas{
-	background: rgba(0, 0, 0, 1.);
+
+/* サムネイル（label要素で囲んでおく）をクリックしたらモーダルが出現 */
+.lightbox-modal input:checked ~ div{
+	-moz-box-sizing:border-box;box-sizing:border-box;
+	position:absolute;
+	z-index:20;
+	display:block;
+	left:40%;
+	margin:-330px auto auto auto;
+	padding:10px 10px 10px 50px;
+	background:#fff;
+
+}
+.lightbox-modal img{
+	width: 370px;
+}
+/* div要素の中の「閉じる」ボタン */
+.lightbox-modal input ~ div label{
+	cursor:pointer;
+}
+
+/* モーダルのバックグラウンド。label要素なのでクリックしたら元に戻る */
+.lightbox-modal input:checked ~ label{
+	position:absolute;
+	z-index:10;
+	display:block;
+	/*top:0;*/
+	right:0;
+	/*bottom:0;*/
+	left:0;
+	width: 100%;
+	/*height: 300%;*/
+	/*background: red;*/
+	/*background:hsla(0,0%,0%,0.80);*/
+	cursor:pointer;
 }
 
 /*----------------------------------*/

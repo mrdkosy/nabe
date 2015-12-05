@@ -21,7 +21,7 @@
 
     <title>Atsuki MayaのHome Page</title>
     <link rel="stylesheet" href="./css/MA.css">
-
+    <link rel="stylesheet" href="./css/sceneStyle.css"> 
     <!-- canvas -->
 
 </head>
@@ -36,7 +36,6 @@
         onShow: function(){ console.log("/ 表示処理"); },
         onHide: function(){ console.log("/ 非表示処理"); }
     });
-
       // "/scene0"シーンの定義
       Scene.add("/scene0").set({
         onEnter: function(){
@@ -49,9 +48,7 @@
             init();
             console.log("/scene1以下に影響する処理"); },
         });
-
       // "/scene1"シーンの定義
-
       // Scene.add("/scene1").set({
       //   onEnter: function(){
       //       $("#scene2 #particles").css({"z-index": 0});
@@ -60,7 +57,6 @@
       //       $("#scene1").css({"z-index": 10});
       //       console.log("/scene1以下に影響する処理"); },
       //   });
-
 Scene.add("/scene2").set({
     onEnter: function(){
         $("#scene0 #outer").css({"z-index": 0});
@@ -71,7 +67,6 @@ Scene.add("/scene2").set({
         $("#scene2 #particles").css({"z-index": 10});
         console.log("/scene2以下に影響する処理"); },
     });
-
       // Scene.add("/scene3").set({
       //   onEnter: function(){
       //       $("#scene1").css({"z-index": 0});
@@ -79,7 +74,6 @@ Scene.add("/scene2").set({
       //       $("#scene3").css({"z-index": 10});
       //       console.log("/scene2以下に影響する処理"); },
       //   });
-
 Scene.add("/scene4").set({
     onEnter: function(){
         $("#scene0 #outer").css({"z-index": -100000});
@@ -89,7 +83,6 @@ Scene.add("/scene4").set({
         $("#scene5").css({"z-index": -100000});
         console.log("/scene2以下に影響する処理"); },
     });
-
 Scene.add("/scene5").set({
     onEnter: function(){
         $("#scene0 #outer").css({"z-index": -100000});
@@ -106,7 +99,6 @@ Scene.add("/scene5").set({
       // setTimeout(function(){ Scene.goto("/scene0"); }, 9000);
       // setTimeout(function(){ Scene.goto("/scene2"); }, 12000);
       // setTimeout(function(){ Scene.goto("/scene4"); }, 15000);
-
 // 
 </script>
 
@@ -232,11 +224,3 @@ Scene.add("/scene5").set({
 </div>
 </body>
 </html>
-
-
-
-
-
-
-
-

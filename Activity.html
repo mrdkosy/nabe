@@ -1,132 +1,177 @@
 <!DOCTYPE>
 <html lang = "ja">
-  <head>
-    <meta charset = "utf-8">
-    <meta name="description" content="">
-    <meta name="keyword" content="">
+<head>
+	<meta charset = "utf-8">
+	<meta name="description" content="">
+	<meta name="keyword" content="">
 
-    <title>Atsuki MayaのHome Page</title>
-    <link rel="stylesheet" href="./css/MA.css">
-    <!-- <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="to-top.js"></script>
-  </head>
-  <body >
-    <div class = "side-bar" id="side-bar">
-      <div id="sideMenu">
-	<a href="index.html"><img src="./img/mylogo.png" alt="logo" ></a>
-	<div class = "contents" id="contents">
-	  <a href = "Profile.html" style ="opacity: 1.0;">
-	    <div class="menu" id="a">Profile</div>
-	  </a><br>
-	  <a href = "Activity.html" style ="opacity: 1.0;">
-	    <div class="menu" id="a2">Activity</div>
-	  </a><br>
-	  <a href = "Work.html" style ="opacity: 1.0;">
-	    <div class="menu" id="a3">Work</div>
-	  </a><br>
-	  <a href = "PhotoCollection.html" style ="opacity: 1.0;">
-	    <div class="menu" id="a4">Photo Collection</div>
-	  </a><br>
+	<title>Atsuki MayaのHome Page</title>
+	<link rel="stylesheet" href="./css/MA.css">
+	<!-- <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="./js/to-top.js"></script>
+</head>
+<body >
+	<div class = "side-bar" id="side-bar">
+		<div id="sideMenu">
+			<a href="index.html"><img src="./img/mylogo.png" alt="logo" ></a>
+			<div class = "contents" id="contents">
+				<a href = "Profile.html" style ="opacity: 1.0;">
+					<div class="menu" id="a">Profile</div>
+				</a><br>
+				<a href = "Activity.html" style ="opacity: 1.0;">
+					<div class="menu" id="a2">Activity</div>
+				</a><br>
+				<a href = "Work.html" style ="opacity: 1.0;">
+					<div class="menu" id="a3">Work</div>
+				</a><br>
+				<a href = "PhotoCollection.html" style ="opacity: 1.0;">
+					<div class="menu" id="a4">Photo Collection</div>
+				</a><br>
+			</div>
+		</div>
+
+
+		<!-- マウスパーティクル -->
+		<canvas id="mParticle" width="500" height="500" style="display: block; z-index: 100000; "></canvas>
+		<!-- コンテンツサイズ取得 -->
+
+		<script>
+			var w = document.getElementById("contents").clientWidth;
+			var h = document.getElementById("contents").clientHeight;
+			$('#mParticle').attr('width', w);
+			$('#mParticle').attr('height', h*100);   
+		</script>
+
+		<!-- 取得終了 -->
+
+		<script type="text/javascript" src="./js/mouseParticle.js"></script>
+		<!-- マウスパーティクル終了 -->
+
 	</div>
-      </div>
+
+	<div class = "main activity">
+		<div class ="article">
+			<h2>Activity</h2>
+			<h4 style="margin-top: 50px; margin-bottom: 50px">私の所属する4つの団体の活動について紹介します。</h4>
+			<ul>
+				<a href="#robogals">
+					<div class="lList"><li>a. Robogals Tokyo</li></div><br>
+				</a>
+				<a href="#lightman">
+					<div class="lList"><li>b. LIGTMAN</li></div><br>
+				</a>
+				<a href="#lit">
+					<div class="lList"><li>c. Life is Tech!</li></div><br>
+				</a>
+				<a href="#msp">
+					<div class="lList"><li style="border-bottom: 1px solid #ffffff">
+						d. Microsoft Student Partners</li></div>
+					</a>
+				</ul>
+				<div id="robogals">
+					<h3 style='color:rgb(168, 211, 255);'>Robogals Tokyo</h3>
+					<img src="./img/robogals.jpg">
+					<p>Robogalsは大学で理工学を専攻し、将来的に技術者を目指す若い女性の数を増やすことを目的とした、学生団体です。</p>
+					<p>
+						<strong>活動内容</strong><br>
+						1. レゴロボットを使った女子小・中学生向けのワークショップ<br>
+						&ensp;&ensp;(最近は、中高生向けにデジタルアートのワークショップも開催)<br>
+
+						2. 女子中高生の科学活動支援　(e.g., ロボコン出場など)<br>
+						3. 理工系専攻の女子大学生に向けたキャリアイベント<br>
+						<br>
+						<strong>役割</strong><br>
+						ここで私は、トレーナーという役職に就いています。<br>
+						トレーナーの主な仕事は、<br>
+						・ワークショップ内容の考案<br>
+						・ワークショップの技術面全般のサポート<br>
+						・Robogalsメンバーの技術向上<br>
+						Robogalのトレーナーは現在二人で担っており、<br>
+						私は主に、デジタルアートワークショップの内容考案などを担当しています。
 
 
-      <!-- マウスパーティクル -->
-      <canvas id="mParticle" width="500" height="500" style="display: block; z-index: 100000; "></canvas>
-      <!-- コンテンツサイズ取得 -->
-      
-      <script>
-	var w = document.getElementById("contents").clientWidth;
-	var h = document.getElementById("contents").clientHeight;
-	$('#mParticle').attr('width', w);
-	$('#mParticle').attr('height', h*100);   
-      </script>
+					</p>
+					<a id="la" href="https://www.facebook.com/RobogalsTokyo">https://www.facebook.com/RobogalsTokyo</a>
+				</div>	
+				<div id="lightman">
+					<h3 style='color:rgb(168, 255, 168);'>LIGHTMAN</h3>
+					<img src="./img/lightman.png">
+					<p>LIGHTMANは、プロジェクションマッピングを行っている日本初で唯一のサークルです。<br>
+						LIGHTMANは「早稲田大学表現工学科メディアデザイン研究室」の有志によって設立され、<br>
+						現在では様々な大学から多くの学生が参加しております。<br>
+						その活躍は「ズームインサタデー」（日本テレビ）でも紹介され、認知度を高めています。<br>
+						<br>
+						<strong>活動内容</strong><br>
+						・大規模なアートイベント<br>
+						・個人の結婚式<br>
+						・早稲田祭などの学園祭<br>
+						など、幅広い場所に作品を提供しております。<br>
 
-      <!-- 取得終了 -->
+						将来的には、団体が主催するイベントを開催し、<br>
+						多くの人にプロジェクションマッピングを含めたあらゆる表現で楽しんでもらうことを目標として活動しています。</p>
+						<a id="la" href="http://lightman.jp/">
+							http://lightman.jp/
+						</a>
+					</div>
+					<div id="lit">
+						<h3 style='color:rgb(255, 168, 168);'>Life is Tech!</h3>
+						<img src="./img/lifeistech.jpg">
+						<p>
+							Life is Tech!は、中学生・高校生のためのプログラミング・IT教育プログラムを企画・運営している会社です。<br>
+							<br>
+							<strong>活動内容</strong><br>
+							・短期集中の合宿型「キャンプ」(春、夏、冬休みに3～8日間)<br>
+							・毎週通う通年型「スクール」<br>
+							・自宅でも学べる「オンライン」<br>
+							など、中学生・高校生のプログラミング教育に特化したサービスを展開しています。<br>
+							サマーキャンプ2015には、約3000名が参加。<br>
+							また、リアルで行うプログラミング教育では、国内最大規模で累計約10000名が参加し、<br>
+							中高生のプログラミングへのコミット数を増やしています。<br>
+							<br>
+							<strong>役割</strong><br>
+							ここで私は、大学生メンターとして活動しています。<br>
+							メンターとは、中高生に直接プログラミング教育を提供するポジションです。<br>
+							メンターのプログラミングの幅は、<br>
+							・iPhone、Androidアプリ開発<br>
+							・Unity、2Dゲーム、Minecraft開発<br>
+							・デザイン、webデザイン、webプログラミング開発<br>
+							・メディアアート、映像編集<br>
+							・デジタルミュージック<br>
+							など様々なコースがある中から、私はメディアアートコースを担当しています。<br>
+							ここでは「openFrameworks」というフレームワークを使って、C++でプログラミングをし、<br>
+							デジタルアート制作しています。	
+							</p>
+							<a id="la" href="https://life-is-tech.com/">
+								https://life-is-tech.com/
+							</a>
 
-      <script type="text/javascript" src="./js/mouseParticle.js"></script>
-      <!-- マウスパーティクル終了 -->
-
-    </div>
-
-    <div class = "main activity">
-      <div class ="article">
-	<h2>Activity</h2>
-	<ul>
-	  <a href="#robogals">
-	    <div class="lList"><li>a. Robogals Tokyo</li></div><br>
-	  </a>
-	  <a href="#lightman">
-	    <div class="lList"><li>b. LIGTMAN</li></div><br>
-	  </a>
-	  <a href="#lit">
-	    <div class="lList"><li>c. Life is Tech!</li></div><br>
-	  </a>
-	  <a href="#msp">
-	    <div class="lList"><li style="border-bottom: 1px solid #ffffff">
-		d. Microsoft Student Partners</li></div>
-	  </a>
-	</ul>
-	<div id="robogals">
-	  <h3 style='color:rgb(168, 211, 255);'>Robogals Tokyo</h3>
-	  <img src="./img/robogals.jpg">
-	  <p>Robogalsは大学で理工学を専攻し、将来的に技術者を目指す若い女性の数を増やすことを目的とした、学生団体です。</p>
-	  <h4>活動内容</h4>
-	  <p>1. レゴロボットを使った女子小・中学生向けのワークショップ<br>
-	    2. 女子中高生の科学活動支援　(e.g., ロボコン出場など)<br>
-	    3. 理工系専攻の女子大学生に向けたキャリアイベント</p>
-	  <a id="la" href="https://www.facebook.com/RobogalsTokyo">https://www.facebook.com/RobogalsTokyo</a>
-	</div>	
-	<div id="lightman">
-	  <h3 style='color:rgb(168, 255, 168);'>LIGHTMAN</h3>
-	  <img src="./img/lightman.png">
-	  <p>LIGHTMANは、主にプロジェクションマッピングを行っている日本初で唯一のサークルです。<br>
-	    LIGHTMANは早稲田大学表現工学科メディアデザイン研究室の有志によって設立され、<br>
-	    現在では他大学の学生も参加しております。<br>
-	    現在LIGHTMANは、大規模なアートイベントから個人の結婚式まで、<br>
-	    幅広い場所に作品を提供しております。<br>
-	    その活躍は「ズームインサタデー」（日本テレビ）でも紹介され、認知度を高めています。<br>
-	    将来的には、団体が主催するイベントを開催し、<br>
-	    多くの人にプロジェクションマッピングを含めたあらゆる表現で楽しんでもらうことが目標です。</p>
-	  <a id="la" href="http://lightman.jp/">
-	    http://lightman.jp/
-	  </a>
-	</div>
-	<div id="lit">
-	  <h3 style='color:rgb(255, 168, 168);'>Life is Tech!</h3>
-	  <img src="./img/lifeistech.jpg">
-	  <p>
-	    中学生・高校生のためのプログラミング・IT教育プログラム「Life is Tech !」を企画・運営。<br>
-	    春、夏、冬休みに3～8日間の短期集中の合宿型「キャンプ」と、毎週通う通年型「スクール」、自宅でも学べる「オンライン」など、中学生、高校生のプログラミング教育に特化したサービスを展開。<br>
-	    サマーキャンプ2015には、約3000名が参加。<br>
-	    リアルで行うプログラミング教育では、国内最大規模で累計約10000名が参加。</p>
-	  <a id="la" href="https://life-is-tech.com/">
-	    https://life-is-tech.com/
-	  </a>
-	</div>
-	<div id="msp">
-	  <h3 style='color:rgb(255, 255, 168);'>Microsoft Student Partners</h3>
-	  <img src="./img/msp.png">
-	  <p><マイクロソフトで技術者や開発者へのテクノロジのエバンジェリズム活動をする<br>デベロッパー エバンジェリズム統括本部が運営するインターンシップ プログラムです。<br>
-												       マイクロソフトのオフィスがある世界 100 か国以上で、7,000 人を超える学生が MSP として活動しており、<br>現在、日本の MSP が中心となって、アジア圏での MSP とのコミュニケーションを主導しています。<br>また、毎年夏に米国・シアトルで開催される MSP Summit では全世界から選抜された約 100 名の MSP が一堂に介して、<br>マイクロソフト米国本社の社員からのレクチャーを受けたり、各国の成功・失敗事例などを話し合いました。<br>グローバルな活動は MSP の特色の 1 つです。<br>
-												       マイクロソフトの技術 －Windows, Azure, Visual Studio, Kinect, C#, .NET, Office, Skype, Edge, Minecraft, IoT などで<br>開発することのおもしろさ、楽しさを学生に伝え、学生の Microsoft Fun! を増やす。<br>Microsoft Student Partnersはそんな学生が集まった団体です。</p>
-												       <a id="la" href="https://msdn.microsoft.com/ja-jp/mt438664.aspx">https://msdn.microsoft.com/ja-jp/mt438664.aspx</a>
-	</div>
-      </div>
-      <div id="footer">
-	<p>twitter: <a href="https://twitter.com/mrdkosy">@mrdkosy</a></p>
-	<p>facebook: <a id="la"href="https://www.facebook.com/maya.atsuki">https://www.facebook.com/maya.atsuki</a></p>
-	<p>blog: <a id="la" href="https://www.tumblr.com/blog/mrdkosy">https://www.tumblr.com/blog/mrdkosy</a></p>
-	<p>mail: g1420501@ocha.is.ac.jp</p>
-      </div>
-    </div>
-    <div class="background">
-      <img src="./img/background.png">
-    </div>
-    <!-- topへ戻るボタン -->
-    <div id="page-top" class="page-top">
-      <p><a id="move-page-top" class="move-page-top">to Page Top</a></p>
-    </div>
-  </body>
-</html>
+						</div>
+						<div id="msp">
+							<h3 style='color:rgb(211, 168, 255);'>Microsoft Student Partners</h3>
+							<img src="./img/msp.png">
+							<p>Microsoft Student Partners(MSP)は、マイクロソフトで技術者や開発者への<br>テクノロジのエバンジェリズム活動をするデベロッパーエバンジェリズム統括本部が運営する<br>
+							インターンシップ プログラムです。<br>
+								マイクロソフトのオフィスがある世界 100 か国以上で、7,000 人を超える学生が MSP として活動しており、<br>現在、日本の MSP が中心となって、アジア圏での MSP とのコミュニケーションを主導しています。<br>また、毎年夏に米国・シアトルで開催される MSP Summit では全世界から選抜された約 100 名の MSP が一堂に介して、<br>マイクロソフト米国本社の社員からのレクチャーを受けたり、各国の成功・失敗事例などを話し合いました。<br>グローバルな活動は MSP の特色の 1 つです。<br>
+								マイクロソフトの技術 －Windows, Azure, Visual Studio, Kinect, C#, .NET, Office, Skype, Edge, Minecraft, IoT などで<br>
+								開発することのおもしろさ、楽しさを学生に伝え、学生の Microsoft Fun! を増やす。<br>
+								MAPはそんな学生が集まった団体です。</p>
+								<a id="la" href="https://msdn.microsoft.com/ja-jp/mt438664.aspx">https://msdn.microsoft.com/ja-jp/mt438664.aspx</a>
+							</div>
+						</div>
+						<div id="footer">
+							<p>twitter: <a href="https://twitter.com/mrdkosy">@mrdkosy</a></p>
+							<p>facebook: <a id="la"href="https://www.facebook.com/maya.atsuki">https://www.facebook.com/maya.atsuki</a></p>
+							<p>blog: <a id="la" href="https://www.tumblr.com/blog/mrdkosy">https://www.tumblr.com/blog/mrdkosy</a></p>
+							<p>mail: g1420501@ocha.is.ac.jp</p>
+						</div>
+					</div>
+					<div class="background">
+						<img src="./img/background.png">
+					</div>
+					<!-- topへ戻るボタン -->
+					<div id="page-top" class="page-top">
+						<p><a id="move-page-top" class="move-page-top">to Page Top</a></p>
+					</div>
+				</body>
+				</html>
